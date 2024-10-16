@@ -1,4 +1,4 @@
-# Elastic-Data-Visualization
+# Elastic Data Visualization
 
 
 # Summary:
