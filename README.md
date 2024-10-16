@@ -252,7 +252,77 @@ This is what this visualization looks like finalized. I can see if anyone makes 
 
 ![image](https://github.com/user-attachments/assets/e9271e0a-846c-4ebb-b8b3-40e5a3518cee)
 
+I changed the name of this visualization to ‘User added or removed from a local group’ and confirm it is in my dashboard.
 
+![image](https://github.com/user-attachments/assets/5815c5ba-7ce4-4f6b-b1f8-feaf1c7b85dd)
+
+**6.	Admin logon not from PAW (Privileged Access Workstations)**
+
+Next visualization I’ll start by selecting ‘Create visualization’. Then confirm I’m using the correct index pattern, and the correct time frame of data.
+
+Next, I’ll select ‘Add filter’ 
+
+Field: ‘event.code’ Operator: is Value: 4624 (this checks for successful logons)
+
+![image](https://github.com/user-attachments/assets/f073e493-c5a3-4488-b004-a5b3f1f645bb)
+
+Next I’ll add another filter for Network Logon.
+
+Field: ‘winlog.event_data.LogonType’ Operator: is Value: 3 (3 = Network logon)
+
+![image](https://github.com/user-attachments/assets/287a5b32-8fab-4829-b7af-de37937aed7c)
+
+Next I’ll start setting up what data I want to see. I select a new row.
+
+Field: ‘user.name.keyword’ changed the name to ‘User’
+
+![image](https://github.com/user-attachments/assets/9406cdee-6417-4ac2-9d06-d694331dd2f0)
+
+Next, I want to see what IP address the user is connecting from. I’ll select a new row.
+
+Field: ‘source.ip.keyword’ Changed the name to ‘Connected from’.
+
+![image](https://github.com/user-attachments/assets/70ae9486-f43e-4f57-a53a-31088e0c3e75)
+
+Next to see the data ill select ‘Count’ in the metrics tab.
+
+I make a KQL query to check for any admins connecting from an ip other than the trusted one.
+
+Query: user.name:Admin* AND NOT source.ip:”192.168.28.134”
+
+This query checks if username is in the Admin group AND NOT the secure ip given, show this data.
+
+Once I hit enter I can see the visualization is complete and showing any admin that has logged on from a non-trusted workstation.
+
+![image](https://github.com/user-attachments/assets/14ff8b9f-4e85-4656-b9d6-c97a66adb8de)
+
+I make sure to save to the dashboard and change the display name in the dashboard 
+
+I can now see it displaying in my dashboard.
+
+![image](https://github.com/user-attachments/assets/7c988843-2264-4e1d-809d-5ed97e68ef28)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Final Dashboards:
+
+![image](https://github.com/user-attachments/assets/64e4e189-dd1f-487f-bec1-daf0ec372280)
+
+![image](https://github.com/user-attachments/assets/25b0bde6-4710-4ea3-9a8a-36890c5326ea)
+
+![image](https://github.com/user-attachments/assets/b90e0c8c-5c04-4b88-acf8-5c957537987d)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Key Takeaways 
+
+•	Learn how to monitor and analyze security events using a Security Information and Event Management (SIEM) platform (Elastic Security)
+
+•	Gain hands-on experience in detecting, responding to, and mitigating security incidents.
+
+•	Develop skills in analyzing logs, setting up alerts, and investigating threats within a SOC environment.
+
+•	Build a foundational understanding of cybersecurity workflows and tools used to protect an organization’s network.
 
 
 
