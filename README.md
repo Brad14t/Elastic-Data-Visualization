@@ -5,7 +5,20 @@
 
 Through this SIEM project using Elastic, I learned how to effectively monitor and analyze security events. I gained hands-on experience detecting and responding to incidents, like failed logons, RDP connections, and user group changes. Setting up custom dashboards helped me visualize security data and understand how different filters work with event codes. I also developed skills in using KQL queries to find specific events, like admin logons from untrusted IPs. This project gave me a deeper understanding of how SOC teams investigate threats and protect networks. I now feel more confident working with SIEM tools, analyzing logs, and creating alerts. Overall, it was a great way to apply what I’ve learned in cybersecurity.
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Utilities:
+
+Elastic Security (SIEM)
+Kibana
+KQL (Kibana Query Language)
+Windows Index Pattern
+Event Codes (e.g., 4625)
+RDP (Remote Desktop Protocol)
+Logon Types
+Privileged Access Workstations (PAW)
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # Walkthrough:
 
