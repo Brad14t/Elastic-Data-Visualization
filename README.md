@@ -9,14 +9,21 @@ Through this SIEM project using Elastic, I learned how to effectively monitor an
 
 # Utilities:
 
-Elastic Security (SIEM)
-Kibana
-KQL (Kibana Query Language)
-Windows Index Pattern
-Event Codes (e.g., 4625)
-RDP (Remote Desktop Protocol)
-Logon Types
-Privileged Access Workstations (PAW)
+•	Elastic Security (SIEM)
+
+•	Kibana
+
+•	KQL (Kibana Query Language)
+
+•	Windows Index Pattern
+
+•	Event Codes (e.g., 4625)
+
+•	RDP (Remote Desktop Protocol)
+
+•	Logon Types
+
+•	Privileged Access Workstations (PAW)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
